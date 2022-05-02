@@ -11,18 +11,25 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="styles/styles.css" />
     <title>Веб Студия</title>
   </head>
   <body>
     <!--header-->
     <h2 hidden class="language">our skills</h2>
-    <header>
-      <a class="link logo" href="index.html"
-        ><span class="web" lang="en">Web</span>Studio</a
-      >
-      <nav class="navigation">
-        <ul class="menu">
+    <header class="nav">
+              <a class="link-header logo" href="index.html"
+          ><span class="web" lang="en">Web</span>Studio</a
+        >
+           <nav>
+        <ul class="menu link">
           <li class="menu-item">
             <a class="menu-link link current" href="index.html">Студия</a>
           </li>
@@ -34,7 +41,8 @@
           </li>
         </ul>
       </nav>
-      <ul class="menu">
+      <!-- <div class="box"> -->
+      <ul class="box">
         <li>
           <a class="contact-mail link" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
@@ -46,125 +54,139 @@
           >
         </li>
       </ul>
+      <!-- </div> -->
     </header>
     <main>
       <!--hero-->
       <section class="hero">
-        <h1 class="hero-header">эффективные решения для вашего бизнесса</h1>
-        <button class="order-btn hero" type="button">Заказать услугу</button>
+        <div class="container">
+          <h1 class="hero-header">эффективные решения для вашего бизнесса</h1>
+          <button class="order-btn hero" type="button">Заказать услугу</button>
+        </div>
       </section>
       <section>
         <!--description-->
-        <h3 hidden>Наши особенности</h3>
-        <ul class="menu">
-          <li>
-            <h3 class="description">Пунктуальность</h3>
-            <p class="section">
-              Задача организации, в особенности же рамки и место обучения кадров
-              влечет за собой.
-            </p>
-          </li>
-          <li>
-            <h3 class="description">Планирование</h3>
-            <p class="section">
-              Равным образом консультация с широким активом в значительной
-              степени обуславливает.
-            </p>
-          </li>
-          <li>
-            <h3 class="description">Современные технологии</h3>
-            <p class="section">
-              Значимость этих проблем настолько очевидна, что реализация
-              плановых заданий.
-            </p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 hidden>Наши особенности</h2>
+          <ul class="menu">
+            <li class="menu-description">
+              <h3 class="description">Внимание к деталям</h3>
+              <p class="section">
+                Идейные соображения, а также начало повседневной работы по формированию позиции.
+              </p>
+            </li>
+            <li class="menu-description">
+              <h3 class="description">Пунктуальность</h3>
+              <p class="section">
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
+            </li>
+            <li class="menu-description">
+              <h3 class="description">Планирование</h3>
+              <p class="section">
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+            <li class="menu-description">
+              <h3 class="description">Современные технологии</h3>
+              <p class="section">
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section>
         <!--what we doing-->
-        <h2 class="portfolio">Чем мы занимаемся</h2>
-        <ul class="menu">
-          <li>
-            <img
-              src="./images/img-1.jpg"
-              alt="розробка програмного забезпечення"
-              width="370"
-              height="295"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/img-2.jpg"
-              alt="робота з мобільним додатком"
-              width="370"
-              height="295"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/img-3.jpg"
-              alt="робота з палітрою кольорів"
-              width="370"
-              height="295"
-            />
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="portfolio">Чем мы занимаемся</h2>
+          <ul class="menu portfolio-img">
+            <li class="img-item">
+              <img
+                src="./images/img-1.jpg"
+                alt="розробка програмного забезпечення"
+                width="370"
+                height="295"
+              />
+            </li>
+            <li class="img-item">
+              <img
+                src="./images/img-2.jpg"
+                alt="робота з мобільним додатком"
+                width="370"
+                height="295"
+              />
+            </li>
+            <li class="img-item">
+              <img
+                src="./images/img-3.jpg"
+                alt="робота з палітрою кольорів"
+                width="370"
+                height="295"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
       <!--our command-->
       <section class="employees">
-        <h2 class="portfolio">Наша команда</h2>
-        <ul class="menu">
-          <li class="employees-card">
-            <img
-              src="./images/id.jpg"
-              alt="Игорь Демьяненко"
-              width="270"
-              height="260"
-            />
-            <h3 class="portfolio-command">Игорь Демьяненко</h3>
-            <p class="command-profession" lang="en">Product Designer</p>
-          </li>
-          <li class="employees-card">
-            <img
-              src="./images/or.jpg"
-              alt="Ольга Репина"
-              width="270"
-              height="260"
-            />
-            <h3 class="portfolio-command">Ольга Репина</h3>
-            <p class="command-profession" lang="en">Frontend Developer</p>
-          </li>
-          <li class="employees-card">
-            <img
-              src="./images/nt.jpg"
-              alt="Николай Тарасов"
-              width="270"
-              height="260"
-            />
-            <h3 class="portfolio-command">Николай Тарасов</h3>
-            <p class="command-profession" lang="en">Marketing</p>
-          </li>
-          <li class="employees-card">
-            <img
-              src="./images/me.jpg"
-              alt="Михаил Ермаков"
-              width="270"
-              height="260"
-            />
-            <h3 class="portfolio-command">Михаил Ермаков</h3>
-            <p class="command-profession" lang="en">UI Designer</p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="portfolio">Наша команда</h2>
+          <ul class="menu portfolio-img">
+            <li class="employees-card">
+              <img
+                src="./images/id.jpg"
+                alt="Игорь Демьяненко"
+                width="270"
+                height="260"
+              />
+              <h3 class="portfolio-command">Игорь Демьяненко</h3>
+              <p class="command-profession" lang="en">Product Designer</p>
+            </li>
+            <li class="employees-card">
+              <img
+                src="./images/or.jpg"
+                alt="Ольга Репина"
+                width="270"
+                height="260"
+              />
+              <h3 class="portfolio-command">Ольга Репина</h3>
+              <p class="command-profession" lang="en">Frontend Developer</p>
+            </li>
+            <li class="employees-card">
+              <img
+                src="./images/nt.jpg"
+                alt="Николай Тарасов"
+                width="270"
+                height="260"
+              />
+              <h3 class="portfolio-command">Николай Тарасов</h3>
+              <p class="command-profession" lang="en">Marketing</p>
+            </li>
+            <li class="employees-card">
+              <img
+                src="./images/me.jpg"
+                alt="Михаил Ермаков"
+                width="270"
+                height="260"
+              />
+              <h3 class="portfolio-command">Михаил Ермаков</h3>
+              <p class="command-profession" lang="en">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!--footer-->
     <footer class="footer">
-      <a class="link logo" href="link"
-        ><span class="web" lang="en">Web</span
-        ><span class="studio-footer">Studio</span></a
+      <a class="link-logo link-footer footer-box" href="link"
+        ><span class="web" lang="en">Web</span>Studio</a
       >
-      <address>
-        <ul class="menu">
+      <address class="footer-bkgr">
+        <ul class="menu footer-box">
           <li>
             <a
               class="contact-adress link"
