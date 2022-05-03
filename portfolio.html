@@ -24,10 +24,10 @@
    <nav>
 <ul class="menu link">
   <li class="menu-item">
-    <a class="menu-link link current" href="index.html">Студия</a>
+    <a class="menu-link link" href="index.html">Студия</a>
   </li>
   <li class="menu-item">
-    <a class="menu-link link" href="portfolio.html">Портфолио</a>
+    <a class="menu-link link current" href="portfolio.html">Портфолио</a>
   </li>
   <li class="menu-item">
     <a class="menu-link link" href="#">Контакты</a>
@@ -72,19 +72,15 @@
         <h1 hidden>Портфолио карточки</h1>
         <div class="container">
         <ul class="portfolio-cards">
-          <li>
-            <img
-              class="filter-img"
-              src="./images/portfolio/img.jpg"
+          <li class="filter-img">
+            <img src="./images/portfolio/img.jpg"
               alt="Технокряк"
             />
             <h2 class="filter-item">Технокряк</h2>
             <p class="filter-suptitle">Веб-сайт</p>
           </li>
-          <li>
-            <img
-              class="filter-img"
-              src="./images/portfolio/img-1.jpg"
+          <li class="filter-img">
+            <img src="./images/portfolio/img-1.jpg"
               alt="Постер New Orlean vs Golden Star"
             />
             <h3 class="filter-item">
@@ -92,46 +88,36 @@
             </h3>
             <p class="filter-suptitle">Дизайн</p>
           </li>
-          <li>
-            <img
-              class="filter-img"
-              src="./images/portfolio/img-2.jpg"
+          <li class="filter-img">
+            <img src="./images/portfolio/img-2.jpg"
               alt="Ресторан Seafood"
             />
             <h2 class="filter-item">Ресторан <span lang="en">Seafood</span></h2>
             <p class="filter-suptitle">Приложение</p>
           </li>
-          <li>
-            <img
-              class="filter-img"
-              src="./images/portfolio/img-3.jpg"
+          <li class="filter-img">
+            <img src="./images/portfolio/img-3.jpg"
               alt="Проект Prime"
             />
             <h2 class="filter-item">Проект <span lang="en">Prime</span></h2>
             <p class="filter-suptitle">Маркетинг</p>
           </li>
-          <li>
-            <img
-              class="filter-img"
-              src="./images/portfolio/img-4.jpg"
+          <li class="filter-img">
+            <img src="./images/portfolio/img-4.jpg"
               alt="Проект Boxes"
             />
             <h2 class="filter-item">Проект <span lang="en">Boxes</span></h2>
             <p class="filter-suptitle">Приложение</p>
           </li>
-          <li>
-            <img
-              class="filter-img"
-              src="./images/portfolio/img-5.jpg"
+          <li class="filter-img">
+            <img src="./images/portfolio/img-5.jpg"
               alt="Inspiration has no Borders"
             />
             <h2 class="filter-item" lang="en">Inspiration has no Borders</h2>
             <p class="filter-suptitle">Веб-сайт</p>
           </li>
-          <li>
-            <img
-              class="filter-img"
-              src="./images/portfolio/img-6.jpg"
+          <li class="filter-img">
+            <img src="./images/portfolio/img-6.jpg"
               alt="Издание Limited Edition"
             />
             <h2 class="filter-item">
@@ -139,19 +125,15 @@
             </h2>
             <p class="filter-suptitle">Дизайн</p>
           </li>
-          <li>
-            <img
-              class="filter-img"
-              src="./images/portfolio/img-7.jpg"
+          <li class="filter-img">
+            <img src="./images/portfolio/img-7.jpg"
               alt="Проект LAB"
             />
             <h2 class="filter-item">Проект <span lang="en">LAB</span></h2>
             <p class="filter-suptitle">Маркетинг</p>
           </li>
-          <li>
-            <img
-              class="filter-img"
-              src="./images/portfolio/img-8.jpg"
+          <li class="filter-img">
+            <img src="./images/portfolio/img-8.jpg"
               alt="Growing Business"
             />
             <h2 class="filter-item" lang="en">Growing Business</h2>
@@ -163,32 +145,34 @@
     </main>
     <!-- footer -->
     <footer class="footer">
-      <a class="link-logo link-footer footer-box" href="link"
-        ><span class="web" lang="en">Web</span>Studio</a
-      >
-      <address>
-        <ul class="menu footer-box">
-          <li>
-            <a
-              class="contact-adress link"
-              href="https://goo.gl/maps/QuRmtKjdtKWpMWAw7"
-              target="_blank"
-              rel="noopener noreferrer"
-              >г. Киев, пр-т Леси Украинки, 26</a
-            >
-          </li>
-          <li>
-            <a class="contact-mail-footer link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="contact-phone-footer link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
-    </footer>
+      <div class="container">
+  <a class="link-logo link-footer footer-box" href="link"
+    ><span class="web" lang="en">Web</span>Studio</a
+  >
+  <address>
+    <ul class="menu footer-box">
+      <li>
+        <a
+          class="contact-adress link"
+          href="https://goo.gl/maps/QuRmtKjdtKWpMWAw7"
+          target="_blank"
+          rel="noopener noreferrer"
+          >г. Киев, пр-т Леси Украинки, 26</a
+        >
+      </li>
+      <li>
+        <a class="contact-mail-footer link" href="mailto:info@devstudio.com"
+          >info@devstudio.com</a
+        >
+      </li>
+      <li>
+        <a class="contact-phone-footer link" href="tel:+380961111111"
+          >+38 096 111 11 11</a
+        >
+      </li>
+    </ul>
+  </address>
+</div>
+</footer>
   </body>
 </html>

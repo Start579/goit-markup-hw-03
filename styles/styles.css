@@ -58,6 +58,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+ 
 }
 .menu-item {
   padding-left: 50px;
@@ -100,10 +101,10 @@ ul {
 
 /* ===============/MENU/================== */
 .container {
-  width: 1230px;
+  width: 1200px;
   margin: auto;
   /* outline: 2px solid #2196f3; */
-  padding: 15px;
+  padding: 0;
   box-sizing: content-box;
   justify-content: space-between;
   align-items: center;
@@ -186,7 +187,7 @@ ul {
   width: 696px;
 }
 .order-btn {
-  padding: 10px 30px 10px 30px;
+  padding: 10px 32px 10px 32px;
   margin-bottom: 200px;
   font-family: var(--accent-font);
   font-weight: var(--accent-font-weight);
@@ -223,15 +224,18 @@ ul {
   color: var(--accent-font-color);
   width: 270px;
 }
-/* =============/PORTFOLIO/================ */
+/* =============/EMPLOYEES/================ */
 .menu-btn {
   display: flex;
 justify-content: center;
+margin-top: 94px;
+margin-bottom: 34px;
 }
 .portfolio-img {
   justify-content: space-between;
   }
 .portfolio-btn-all {
+  padding: 6px 22px 6px 22px;
   margin-right: 8px;
   font-family: var(--accent-font);
   font-weight: var(--second-font-weight);
@@ -246,6 +250,7 @@ justify-content: center;
   border: transparent;
 }
 .portfolio-btn {
+  padding: 6px 22px 6px 22px;
   margin-right: 8px;
   font-family: var(--accent-font);
   font-weight: var(--second-font-weight);
@@ -271,7 +276,7 @@ justify-content: center;
 .employees-card {
   margin-bottom: 94px;
   background-color: var(--accent-color-white);
- 
+  
 }
 .portfolio {
   padding: 94px 0px 50px;
@@ -325,27 +330,23 @@ justify-content: center;
 /* ============/FOOTER-LOGO/=============== */
 .footer {
   background-color: var(--accent-bacground-color);
-  width: 1230px;
-  margin: auto;
-  /* outline: 2px solid #2196f3; */
-  padding: 15px;
-  box-sizing: content-box;
-  justify-content: space-between;
-  align-items: center;
+  padding: 60px;
+ 
 }
 .footer-box {
-  /* display: flex;
-  align-content: flex-start; */
   width: 230px;
   flex-wrap: wrap;
   padding: 20px;
-}
+ }
 .link-logo {
   color: var(--accent-color-white);
   font-weight: var(--accent-font-weight);
   font-size: 26px;
   font-family: raleway;
+  padding-top: 60px;
   }
+
+/* =============/PORTFOLIO/================ */
 
 .filter-item {
   margin-top: 0;
@@ -356,6 +357,7 @@ justify-content: center;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--accent-bacground-color);
+  padding-left: 24px;  
 }
 .filter-suptitle {
   margin-top: 0;
@@ -365,4 +367,14 @@ justify-content: center;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--accent-font-color);
+  padding-left: 24px;
 }
+/* .filter-img {
+border: 1px solid #eeeeee;
+padding-bottom: 110px;
+} */
+.portfolio-cards>.filter-img {
+  outline: 2px solid #eeeeee;
+  margin-bottom: 94px;
+}
+.filter-item>.filter-suptitle {
