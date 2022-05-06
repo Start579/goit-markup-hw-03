@@ -23,12 +23,11 @@
   </head>
   <body>
     <!--header-->
-    <h2 hidden class="language">our skills</h2>
-    <header class="nav">
-              <a class="link-header logo" href="index.html"
-          ><span class="web" lang="en">Web</span>Studio</a
-        >
-           <nav>
+    <header class="container header-line">
+      <a class="link-header logo" href="index.html"
+        ><span class="web" lang="en">Web</span>Studio</a
+      >
+      <nav class="menu-header">
         <ul class="menu link">
           <li class="menu-item">
             <a class="menu-link link current" href="index.html">Студия</a>
@@ -41,8 +40,7 @@
           </li>
         </ul>
       </nav>
-      <!-- <div class="box"> -->
-      <ul class="box">
+           <ul class="box">
         <li>
           <a class="contact-mail link" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
@@ -54,8 +52,7 @@
           >
         </li>
       </ul>
-      <!-- </div> -->
-    </header>
+        </header>
     <main>
       <!--hero-->
       <section class="hero">
@@ -64,34 +61,35 @@
           <button class="order-btn hero" type="button">Заказать услугу</button>
         </div>
       </section>
-      <section>
+      <section class="section">
         <!--description-->
         <div class="container">
           <h2 hidden>Наши особенности</h2>
           <ul class="menu">
             <li class="menu-description">
               <h3 class="description">Внимание к деталям</h3>
-              <p class="section">
-                Идейные соображения, а также начало повседневной работы по формированию позиции.
+              <p class="description-item">
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
               </p>
             </li>
             <li class="menu-description">
               <h3 class="description">Пунктуальность</h3>
-              <p class="section">
+              <p class="description-item">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
             <li class="menu-description">
               <h3 class="description">Планирование</h3>
-              <p class="section">
+              <p class="description-item">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
             <li class="menu-description">
               <h3 class="description">Современные технологии</h3>
-              <p class="section">
+              <p class="description-item">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -99,7 +97,7 @@
           </ul>
         </div>
       </section>
-      <section>
+      <section class="section">
         <!--what we doing-->
         <div class="container">
           <h2 class="portfolio">Чем мы занимаемся</h2>
@@ -132,10 +130,10 @@
         </div>
       </section>
       <!--our command-->
-      <section class="employees">
+      <section class="employees section">
         <div class="container">
-          <h2 class="portfolio">Наша команда</h2>
-          <ul class="menu portfolio-img">
+          <h2 class="employees-header">Наша команда</h2>
+          <ul class="menu employees-img">
             <li class="employees-card">
               <img
                 src="./images/id.jpg"
@@ -143,7 +141,7 @@
                 width="270"
                 height="260"
               />
-              <h3 class="portfolio-command">Игорь Демьяненко</h3>
+              <h3 class="employees-command">Игорь Демьяненко</h3>
               <p class="command-profession" lang="en">Product Designer</p>
             </li>
             <li class="employees-card">
@@ -153,7 +151,7 @@
                 width="270"
                 height="260"
               />
-              <h3 class="portfolio-command">Ольга Репина</h3>
+              <h3 class="employees-command">Ольга Репина</h3>
               <p class="command-profession" lang="en">Frontend Developer</p>
             </li>
             <li class="employees-card">
@@ -163,7 +161,7 @@
                 width="270"
                 height="260"
               />
-              <h3 class="portfolio-command">Николай Тарасов</h3>
+              <h3 class="employees-command">Николай Тарасов</h3>
               <p class="command-profession" lang="en">Marketing</p>
             </li>
             <li class="employees-card">
@@ -173,7 +171,7 @@
                 width="270"
                 height="260"
               />
-              <h3 class="portfolio-command">Михаил Ермаков</h3>
+              <h3 class="employees-command">Михаил Ермаков</h3>
               <p class="command-profession" lang="en">UI Designer</p>
             </li>
           </ul>
@@ -181,35 +179,37 @@
       </section>
     </main>
     <!--footer-->
-        <footer class="footer">
-          <div class="container">
-      <a class="link-logo link-footer footer-box" href="link"
-        ><span class="web" lang="en">Web</span>Studio</a
-      >
-      <address>
-        <ul class="menu footer-box">
-          <li>
-            <a
-              class="contact-adress link"
-              href="https://goo.gl/maps/QuRmtKjdtKWpMWAw7"
-              target="_blank"
-              rel="noopener noreferrer"
-              >г. Киев, пр-т Леси Украинки, 26</a
-            >
-          </li>
-          <li>
-            <a class="contact-mail-footer link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="contact-phone-footer link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
-    </div>
+    <footer class="footer">
+      <div class="container">
+        <a class="link-logo link-footer footer-box" href="link"
+          ><span class="web" lang="en">Web</span>Studio</a
+        >
+        <address>
+          <ul class="footer-box">
+            <li>
+              <a
+                class="contact-adress link"
+                href="https://goo.gl/maps/QuRmtKjdtKWpMWAw7"
+                target="_blank"
+                rel="noopener noreferrer"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li>
+              <a
+                class="contact-mail-footer link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="contact-phone-footer link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
-   </body>
+  </body>
 </html>
