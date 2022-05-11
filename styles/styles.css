@@ -66,15 +66,15 @@ img {
   text-decoration: none;
 }
 .menu {
-  list-style: none;
   display: flex;
 }
-.body {
-  margin: 0;
+body {
   font-family: var(--accent-font);
-  font-weight: var(--accent-font-weight);
-  color: var(--accent-color);
-  background-color: var(--accent-bacground-color);
+  font-weight: var(--second-font-weight);
+  background-color: var(--accent-color-white);
+  font-size: var(--accent-font-size);
+  color: var(--accent-font-color);
+  letter-spacing: 0.03em;
 }
 /* ===============/LOGO/================== */
 .web {
@@ -105,13 +105,18 @@ img {
   display: flex;
 }
 .menu-link {
-  font-family: var(--accent-font);
-  font-weight: var(--second-font-weight);
-  font-size: var(--accent-font-size);
   line-height: var(--accent-line-height);
   letter-spacing: 0.02em;
   color: var(--accent-bacground-color);
   margin-right: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.menu-link-indent {
+  line-height: var(--accent-line-height);
+  letter-spacing: 0.02em;
+  color: var(--accent-bacground-color);
+  margin-right: 0;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -122,10 +127,7 @@ img {
 }
 .contact-mail,
 .contact-phone {
-  font-family: var(--accent-font);
   font-style: normal;
-  font-weight: var(--second-font-weight);
-  font-size: var(--accent-font-size);
   line-height: var(--accent-line-height);
   letter-spacing: 0.02em;
   color: var(--accent-font-color);
@@ -159,7 +161,6 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  font-family: var(--accent-font);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -170,8 +171,6 @@ img {
 }
 .order-btn {
   padding: 10px 32px 10px 32px;
-  font-family: var(--accent-font);
-  font-weight: var(--accent-font-weight);
   font-size: var(--secondary-font-size);
   line-height: 1.87;
   letter-spacing: 0.06em;
@@ -185,36 +184,27 @@ img {
 .menu-description {
   margin-right: 30px;
 }
-.menu-description-last {
+.menu-description-indent {
   margin-right: 0;
 }
 .description {
-  font-family: var(--accent-font);
-  font-weight: var(--accent-font-weight);
-  font-size: var(--accent-font-size);
   line-height: var(--accent-line-height);
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-bacground-color);
 }
 .description-item {
   margin-top: 10px;
-  font-family: var(--accent-font);
-  font-size: var(--accent-font-size);
+  font-weight: 400;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--accent-font-color);
   width: 270px;
 }
 /* =============/EMPLOYMENT/================ */
 .employment {
   margin-bottom: 50px;
-  font-family: var(--accent-font);
   font-weight: var(--accent-font-weight);
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--accent-bacground-color);
 }
 .employment-item {
@@ -222,10 +212,12 @@ img {
 }
 .employment-img {
   margin-right: 30px;
-  margin-bottom: 94px;
 }
 .employment-img-last {
   margin-right: 0;
+}
+.employment-ident {
+  padding-top: 0;
 }
 /* =============/EMPLOYEES/================ */
 .employees {
@@ -238,34 +230,25 @@ img {
 
 .employees-header {
   margin-bottom: 50px;
-  font-family: var(--accent-font);
   font-weight: var(--accent-font-weight);
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--accent-bacground-color);
 }
 
 .employees-command {
   margin-top: 30px;
-  font-family: var(--accent-font);
-  font-weight: var(--second-font-weight);
   font-size: var(--secondary-font-size);
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--accent-bacground-color);
 }
 .command-profession {
   margin-bottom: 30px;
   margin-top: 10px;
-  font-family: var(--accent-font);
-  font-size: var(--secondary-font-size);
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--accent-font-color);
 }
 /* =============/PORTFOLIO/================ */
 .menu-btn {
@@ -276,12 +259,9 @@ img {
 .portfolio-btn-all {
   padding: 6px 22px 6px 22px;
   margin-right: 8px;
-  font-family: var(--accent-font);
-  font-weight: var(--second-font-weight);
   font-size: var(--secondary-font-size);
   line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--accent-color-white);
   background-color: var(--accent-color);
   border-radius: 4px;
@@ -291,12 +271,9 @@ img {
 .portfolio-btn {
   padding: 6px 22px 6px 22px;
   margin-right: 8px;
-  font-family: var(--accent-font);
-  font-weight: var(--second-font-weight);
   font-size: var(--secondary-font-size);
   line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03em;
   color: black;
   background-color: var(--second-bacground-color);
   border-radius: 4px;
@@ -310,7 +287,6 @@ img {
 }
 /* ===========/PORTFOLIO-MENU/============== */
 .filter-item {
-  font-family: var(--accent-font);
   font-weight: var(--accent-font-weight);
   font-size: 18px;
   line-height: 2;
@@ -318,10 +294,8 @@ img {
   color: var(--accent-bacground-color);
 }
 .filter-suptitle {
-  font-family: var(--accent-font);
   font-size: var(--secondary-font-size);
   line-height: 1.87;
-  letter-spacing: 0.03em;
   color: var(--accent-font-color);
 }
 .portfolio-cards {
@@ -346,9 +320,7 @@ img {
 /* ==========/FOOTER-CONTACTS/============= */
 .contact-mail-footer,
 .contact-phone-footer {
-  font-family: var(--accent-font);
   font-style: normal;
-  font-size: var(--accent-font-size);
   line-height: var(--accent-line-height);
   letter-spacing: 0.02em;
   color: rgba(255, 255, 255, 0.6);
@@ -362,11 +334,8 @@ img {
   color: var(--accent-color);
 }
 .contact-adress {
-  font-family: var(--accent-font);
   font-style: normal;
-  font-size: var(--accent-font-size);
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--second-font-color);
 }
 .footer-box {
